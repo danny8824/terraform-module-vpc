@@ -6,7 +6,7 @@
 
 ```hcl
 module "ec2" {
-  source  = ""
+  source  = "danny8824/vpc/module"
   version = "0.0.1"
   region = "us-east-2"
   vpc_cidr = "10.0.0.0/16"
