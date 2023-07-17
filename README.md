@@ -4,9 +4,11 @@
 
 ## Usage:
 
+## Usage:
+
 ```hcl
 module "ec2" {
-  source  = "danny8824/vpc/module"
+  source  = ""
   version = "0.0.1"
   region = "us-east-2"
   vpc_cidr = "10.0.0.0/16"
@@ -16,6 +18,7 @@ module "ec2" {
   private_cidr1 = "10.0.101.0/24"
   private_cidr2 = "10.0.102.0/24"
   private_cidr3 = "10.0.103.0/24"
-  key_name = "new-key"
+  key_name = "ohio-key"
   instance_type = "t2.micro"
 }
+```
